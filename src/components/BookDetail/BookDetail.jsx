@@ -1,6 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import addToStoredReadList from "../../Utilities/addToDb";
-import addToWishList from "../../Utilities/addToWishDb";
+import {
+  getStoredReadList,
+  addToStoredReadList,
+} from "../../Utilities/addToDb";
+import { getWishList, addToWishList } from "../../Utilities/addToWishDb";
 
 const BookDetail = () => {
   const { bookId } = useParams();
